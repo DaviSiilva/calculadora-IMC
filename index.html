@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <main id="conteiner">
+        <section id="img">
+            <img src="assets/img/perigos-da-obesidade-removebg-preview.png" alt="">
+        </section>
+
+        <section id="calculator">
+            <form action="" id="form">
+                <h1 id="title">
+                    Calculator - IMC
+                </h1>
+
+                <div class="input-box">
+                    <label for="weight">Peso em kg</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="weight" step="0.01">
+                        <span>
+                            kg
+                        </span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">Altura em metros</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" id="height" step="0.01">
+                        <span>
+                            m
+                        </span>
+                    </div>
+                </div>
+
+                <button type="submit" id="calculate">Calcular</button>
+            </form>
+
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div id="more-infos">
+                    <a href="https://www.healthy-heart.org/pt/mantenha-o-seu-coracao-saudavel/manter-um-peso-saudavel/?gad_source=1&gclid=Cj0KCQjw6oi4BhD1ARIsAL6pox3YxMBQI7h3BgUEIahsbVbDT2AAChnFIXQL_Q03juL-7v-LtaCzBeIaAg5cEALw_wcB" target="_blank">Mais informaçôes sobre o IMC
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
