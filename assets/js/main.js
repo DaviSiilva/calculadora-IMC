@@ -17,13 +17,13 @@ form.addEventListener("submit", function (event) {
 
     if (bmi < 18.5) {
         description = "Cuidado!, Você está abaixo ddo peso";
-     } else if (bmi >= 18.5 && bmi <= 24.9) {
+     } else if (bmi >= 18.5 && bmi <= 24.99) {
         description = "Você está no peso ideal";
         value.classList.remove("attention");
         value.classList.add("normal");
-     } else if (bmi >= 25 && bmi <= 29.9) {
+     } else if (bmi >= 25 && bmi <= 29.99) {
         description = "Cuidado!, Você está acima do peso";
-     } else if (bmi >= 30 && bmi <= 34.9) {
+     } else if (bmi >= 30 && bmi <= 34.99) {
         description = "Cuidado!, Você está em obesidade grau I";
      } else if (bmi >= 35 && bmi <= 40) {
         description = "Cuidado!, Você está em obesidade grau II"
